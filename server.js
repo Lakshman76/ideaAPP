@@ -6,7 +6,7 @@ const dbConfig = require('./config/db.config.js')
 const app = express()
 
 // logic to connect to mongoDB and create an admin user
-mongoose.connect("dbConfig.DB_URL")
+mongoose.connect(dbConfig.DB_URL)
 
 const db = mongoose.connection;
 
